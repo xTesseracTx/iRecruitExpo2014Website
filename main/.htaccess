@@ -1,0 +1,11 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^oxygenperspectives\.irecruitexpo\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.oxygenperspectives\.irecruitexpo\.com$
+RewriteRule ^/?$ "http\:\/\/hrneurope\.com\/" [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^oxygenperspectives\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.oxygenperspectives\.com$
+RewriteRule ^/?$ "http\:\/\/hrneurope\.com\/" [R=301,L]
+

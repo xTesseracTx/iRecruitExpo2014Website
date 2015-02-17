@@ -1,0 +1,6 @@
+AuthName "iRecruit Sponsor Appendices - Restricted Area"
+
+AuthType Basic
+
+Require valid-user
+AuthUserFile "/home/irecruit/.htpasswds/public_html/main/SponsorAppendices/passwd"

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+
+<!-- Basic -->
+<meta charset="utf-8">
+<title>iRecruit Expo 2014 - Join Our Blog Squad!</title>
+<meta name="keywords" content="iRecruit, HR tech" />
+<meta name="description" content="iRecruit Expo 2014">
+<meta name="author" content="TesseracT - bottyan.tamas@web-developer.hu">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon setting -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- Web Fonts  -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Alegreya|Alegreya+SC|Oswald:400,300" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Domine:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Libs CSS -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css" media="screen" />
+<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" media="screen" />
+<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" href="vendor/isotope/jquery.isotope.css" media="screen" />
+<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen" />
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/theme-elements.css">
+<link rel="stylesheet" href="css/theme-animate.css">
+
+<!-- Hover Effect CSS -->
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/hover_pack.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/hover_pack.js"></script>
+<!-- Skin CSS -->
+<link rel="stylesheet" href="css/skins/default.css">
+
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/theme-responsive.css" />
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Head Libs -->
+<script src="vendor/modernizr.js"></script>
+<script src="js/menutransition.js"></script>
+
+<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+<!-- FORM VALIDATOR SCRIPT -->        
+<script src="js/form-validator.js"></script> 
+<!-- HEADER SWAPPER-->
+<script type="text/javascript">
+
+window.onload = choosePic;
+
+var myPix = new Array("img/headers/h-1.jpg","img/headers/h-2.jpg","img/headers/h-3.jpg","img/headers/h-4.jpg","img/headers/h-5.jpg");
+
+function choosePic() {
+    var randomNum = Math.floor((Math.random() * myPix.length));
+    document.getElementById("iRecruitHeader").style.backgroundImage =
+        "url(" + myPix[randomNum] + ")";
+}
+
+</script>    
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function prepareInputsForHints() {
+	var inputs = document.getElementsByTagName("input");
+	for (var i=0; i<inputs.length; i++){
+		// test to see if the hint span exists first
+		if (inputs[i].parentNode.getElementsByTagName("span")[0]) {
+			// the span exists!  on focus, show the hint
+			inputs[i].onfocus = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+			}
+			// when the cursor moves away from the field, hide the hint
+			inputs[i].onblur = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+			}
+		}
+	}
+	// repeat the same tests as above for selects
+	var selects = document.getElementsByTagName("select");
+	for (var k=0; k<selects.length; k++){
+		if (selects[k].parentNode.getElementsByTagName("span")[0]) {
+			selects[k].onfocus = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "inline";
+			}
+			selects[k].onblur = function () {
+				this.parentNode.getElementsByTagName("span")[0].style.display = "none";
+			}
+		}
+	}
+}
+addLoadEvent(prepareInputsForHints);
+</script>  
+
+<!--Google Tracking Script -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49721235-1', 'irecruitexpo.com');
+  ga('send', 'pageview');
+
+</script>
+
+<!--END Google Tracking Script -->
+
+       
+<style type="text/css">
+h4 {
+	color: #3a3a3a;
+}
+.button-icon {
+font-size:10px; 
+bottom:1px; 
+left:4px; 
+position:relative;	
+	}
+
+.phonenumbers{
+float:left;
+left:-30px;	
+	}
+
+.mapcontainer {float:right; 
+              right:-30px;
+			  max-height:250px;}
+.contact-pic{
+height:150px;
+width:150px;
+margin-top:10px;	
+	}	
+
+
+/* All form elements are within the definition list for this example */
+dl {
+	font:normal 12px/15px;
+    position: relative;
+    width: 350px;
+}
+
+
+
+/* The hint to Hide and Show */
+.hint {
+   	display: none;
+    position: absolute;
+	z-index:5000;
+    top: -10px;
+	min-width:300px;
+    margin-top: -4px;
+    border: 1px solid #c93;
+    padding: 10px 12px;
+    /* to fix IE6, I can't just declare a background-color,
+    I must do a bg image, too!  So I'm duplicating the pointer.gif
+    image, and positioning it so that it doesn't show up
+    within the box */
+    background: #ffc url(pointer.gif) no-repeat -10px 5px;
+}
+
+/* The pointer image is hadded by using another span */
+.hint .hint-pointer {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 10px;
+    height: 19px;
+    background: url(pointer.gif) left top no-repeat;
+}				  
+@media (max-width:990px) {
+.mapcontainer  {float:none; 
+              right:0px;}	
+.phonenumbers{
+float:none;
+left:0px;	
+	}	
+	}	
+
+		  
+</style>
+<!--FLOATING BOX FADEIN/OUT -->
+<script type="text/javascript">
+$(window).bind("scroll", function() {
+    if ($(this).scrollTop() > 80) {
+        $("#floating-ad").fadeIn();
+    } 
+	
+	else {
+        $("#floating-ad").fadeOut();
+    }
+	
+});
+
+</script>
+
+<!--END FLOATING BOX FADEIN/OUT -->
+<!--Menu swapper -->
+
+</head>
+<!--Declare the top menu to be sticky -->
+<body class="sticky-menu-active">
+<div class="body"> 
+  <!--HEADER-->
+  <header id="header" class="header"> 
+    
+    <!--Top Grey Container -->
+    
+    <div class="topbox" id="topbox">
+      <div class="container wide-container"> <a href="http://www.hrneurope.com/" target="_blank" title="HRN Europe">
+        <div id="toplogo"></div>
+        </a> <a href="https://www.facebook.com/irecruitconference" title="Facebook - HR Tech Europe" target="_blank">
+        <div class="topbox-social" id="top-fb"><i  class="icon icon-facebook"></i></div>
+        </a> <a href="https://twitter.com/irecruitexpo" title="Twitter - HR Tech Europe" target="_blank">
+        <div class="topbox-social" id="top-twitter" ><i class="icon icon-twitter"></i></div>
+        </a> <a href="http://linkd.in/1kCrNz6" title="LinkedIn - HR Tech Europe" target="_blank">
+        <div class="topbox-social" id="top-ln" ><i class="icon icon-linkedin"></i></div>
+        </a> <a href="http://www.flickr.com/photos/71007493@N05/" title="Flickr - HR Tech Europe" target="_blank">
+        <div class="topbox-social" id="top-flickr" ><i class="icon icon-flickr"></i></div>
+        </a>
+        <div id="topbox-login">Login:
+          <input class="topbox-login"  type="text" placeholder="email address">
+          <input class="topbox-login" type="password" placeholder="password">
+          <input id="topbox-login-ok" type="submit" value="OK">
+        </div>
+      </div>
+    </div>
+    <!-- END Top Grey Container --> 
+    
+    <!-- Top Black Container -->
+    
+    <div class="wide-container container"> 
+      
+      <!--Logo in Top Black Container--> 
+      
+      <a href="index.html">
+      <h1 class="logo" id="logo"> <img alt="iRecruitExpoLogo" id="irecruit-logo" style="z-index:0;" src="img/navmenu/iRecruit_2014_logo.png"> </h1>
+      </a> 
+      <!-- END Logo in Top Black Container--> 
+      
+      <!--Top-Right section in Top Black Container-->
+      <div id="topright-container">
+        <div id="topright-lefttside-container" >AMSTERDAM RAI <br>
+          5-6 JUNE 2014</div>
+        <div id="topright-righttside-container" ><a href="register.html"  title="Get Your Ticket Now"><img alt="get your ticket now" class="wobble-vertical" src="img/navmenu/iRecruit_2014_topright-tickets.png"></a></div>
+      </div>
+      <!-- END Top-Right section in Top Black Container-->
+      
+      <div class="navbar-collapse nav-main-collapse collapse" > 
+        
+        <!-- Top Navigation Menu -->
+        <nav class="nav-main mega-menu">
+          <ul class="nav nav-pills nav-main" id="mainMenu" >
+             <!-- Menuitem: HOME-->
+            <li class="home-menuitem"><a href="index.html" title="iRecruit 2014 - Main page" style="padding:7px 5px 0px 5px !important; "><i class="icon icon-home" style="font-size:32px;"  ></i></a></li>
+            <!-- END Menuitem: HOME--> 
+
+            <!-- Dropdown Menuitem: GET INVOLVED-->
+            <li class="dropdown "><a class="dropdown-toggle" id="navbar-getinvolved" href="#"><i class="icon icon-caret-right" ></i> GET INVOLVED </a>
+              <ul id="getinvolved-dropdown" class="dropdown-menu">
+                <li class="getinvolved-smalltext whitetext em08 ptsans-text">I want to:</li>
+                <li class="em15 float"><a href="register.html">
+                  <div class="getinvolved-whitespace"></div>
+                  BUY A TICKET <i  class="icon getinvolved-icon icon-ticket"></i></a></li>
+                <li class="em15 float"><a  href="http://bit.ly/1hMAtEf">
+                  <div class="getinvolved-whitespace"></div>
+                  REGISTER VIP <i  class="icon getinvolved-icon  icon-star"></i></a></li>
+                <li class="em15 float"><a href="sponsor.html">
+                  <div class="getinvolved-whitespace"></div>
+                  <span id="getinvolved-sponsoritem">SPONSORS <i class="icon getinvolved-icon icon-euro"></i></span></a></li>
+                 <li class="wp15 getinvolved-divider"></li>
+                <li class="wp15"></li>
+                <li class="getinvolved-smalltext whitetext em08 ptsans-text">Other things you can do:</li>
+                <li class="float"><a href="blogsquad.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Join the Blog Squad<i class="icon getinvolved-icon icon-pencil"></i></a></li>
+                <li class="float"><a href="partner.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Become a Partner<img class="getinvolved-img-icon" alt="parther icon"  src="img/navmenu/iRecruit_2014_partner-icon.png" ></a></li>
+                <li class="float"><a href="applymedia.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Apply as Media<i class="icon getinvolved-icon icon-microphone"></i></a></li>
+                <li class="float"><a href="nominatespeaker.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Nominate a Speaker<img class="getinvolved-img-icon" alt="speaker icon"  src="img/navmenu/iRecruit_2014_speaker-icon.png" ></a></li>
+                 <li class="float"><a href="reganalysts.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Registered Analysts<img class="getinvolved-img-icon" alt="alanyst icon"   src="img/navmenu/iRecruit_2014_analyst-icon.png" ></a></li>
+                <li class="float"><a href="contact.html">
+                  <div class="getinvolved-whitespace"></div>
+                  Contact Us! <i class="icon icon-comments getinvolved-icon"></i></a></li>
+              </ul>
+            </li>
+            <!-- ENDMenuitem: GET INVOLVED--> 
+            <!-- Menuitem: ABOUT-->
+            <li > <a  href="aboutus.html"><i class="icon icon-caret-right"></i> ABOUT </a> </li>
+            
+            <!-- END Menuitem: SPONSORS-->
+            <!-- Menuitem:SPONSORS-->
+            <li class="dropdown" > <a class="dropdown-toggle"  href="sponsor.html"><i class="icon icon-caret-right"></i> SPONSORS </a> 
+             <ul id="sponsor-dropdown" class="dropdown-menu" style="">
+                <li class="getinvolved-smalltext whitetext em08 ptsans-text">Download our:</li>
+               <li><a href="sponsor-appendices.html">Sponsor Appendices</a></li>
+               </ul>
+              </li> 
+            <!-- END Menuitem: SPONSORS-->
+             <!-- Menuitem:VENUE-->
+            <li > <a  href="venue.html"><i class="icon icon-caret-right"></i> VENUE </a> </li>
+            
+            <!-- END Menuitem: Venue-->
+          </ul>
+        </nav>
+        <!-- Top Navigation Menu --> 
+      </div>
+      <!--END Menu Container-->
+      <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse"><i class="icon icon-bars"> </i></button>
+    </div>
+    <!--END Top Container --> 
+  </header>
+  <div role="main" class="main">
+    <div id="content" class="content full">
+      <section class="home-top-clean"> 
+       
+      </section>
+    </div>
+   <!--Header static image -->
+    <div id="iRecruitHeader" class="responsive"><div class="header-container"><h1 class="whitetext em25">Join the Blog Squad</h1>
+    <p class="whitetext">Join the iRecruit Blog Squad if you have top notch, up-to-date industry-related<br>
+ news that go above and beyond links, forums, troubleshooting tips.<br>
+ Join the „top” influencers in social media <br>
+on talent management & recruiting.</p>
+    </div>
+    </div>
+    <!--END Header static image -->
+   <div class="col-md-12 row container container-centered" >
+      <div class="wp35"></div>
+      <div class="col-md-2">
+   <h4><strong>Mainline Numbers</strong></h4>
+   <p> General Inquiries<br>
+ 
+      <i class="icon icon-phone"></i>  +36 1 201 1469</p>
+     
+   <p>UK & Ireland Number
+      <br>
+ 
+      <i class="icon icon-phone"></i>  +44 20 34 689 689</p>
+   </div>
+   
+   <div class="col-md-9" style="float:right;">
+   <style>.embed-container { position: relative; padding-bottom: 36.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 305px; }</style><div class='embed-container'><iframe width='870' height='305' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=lovohaz+utca+39&aq=&sll=37.0625,-95.677068&sspn=61.323728,135.263672&ie=UTF8&hq=lovohaz+utca+39&hnear=&radius=15000&t=m&ll=47.510778,19.023966&spn=0.071946,0.071946&output=embed'></iframe><br /><small><a href='https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=lovohaz+utca+39&aq=&sll=37.0625,-95.677068&sspn=61.323728,135.263672&ie=UTF8&hq=lovohaz+utca+39&hnear=&radius=15000&t=m&ll=47.510778,19.023966&spn=0.071946,0.071946' style='color:#0000FF;text-align:left'>View Larger Map</a></small></div></div>
+</div>
+<h4 class="centered-text">Please feel free to contact our team members below if we can be of assistance. </h4>
+<div class="wp30"></div>
+<div class="row container container-centered">
+<div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/brigi.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>Operations Manager</strong><br>
+
+Brigitta Bosz<br>
+
+<strong>+36 1 201 1469</strong></p>
+</div>   
+ <div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/viki.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>Operations Director</strong><br>
+
+Viktoria McCann<br>
+
+<strong>+36 70 331 3431</strong>
+</p>
+</div> 
+<div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/peter.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>Research & Analysts</strong><br>
+
+Peter Russell<br>
+
+<strong>+33 64 89 23 260</strong></p>
+</div> 
+ <div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/rita.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>Speakers</strong><br>
+
+Rita Vass<br>
+
+<strong>+36 30 2042457</strong>
+
+
+</p>
+</div> 
+<div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/juli.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>General Inquiry</strong><br>
+
+Julianna Süki<br>
+<strong>+36 1 201 1469</strong>
+</p>
+</div> 
+
+
+<div class="col-xs-6 col-lg-2 col-md-2 ">
+<img src="img/aboutus/marc.jpg" class="contact-pic">
+<p style="font-size:16px;"><strong>Partners</strong><br>
+
+Marc Coleman<br>
+
+<strong>+36 30 341 1356</strong>
+</p>
+</div> 
+ 
+
+
+
+   </div>
+   
+   </div> 
+    
+ 
+
+
+
+   </div>
+   
+   </div> 
+    
+    
+    
+    
+    <h4 class="centered-text">Please fill out the form below!</h4>
+    
+    
+    <!-- CONTACT FORM -->
+   <div class="container contact-container">
+    <p class="centered-text">Join our database or please send your inquiry via the contact form below - in processing your inquiry, <br>
+please ensure you take time to fill in all the fields.<br>
+
+</p>
+    <form id="myForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onSubmit="return validateForm()">
+  <input type="hidden" name="oid" value="00DD0000000nwgk" />
+  <input type="hidden" name="retURL" value="http://irecruitexpo.com/thankyou.html" />
+  <!--  ----------------------------------------------------------------------  --> <!--  NOTE: These fields are optional debugging elements. Please uncomment    --> <!--  these lines if you wish to test in debug mode.                          --> <!--  <input type="hidden" name="debug" value=1>                              --> <!--  <input type="hidden" name="debugEmail" value="tamas@hrneurope.com">     --> <!--  ----------------------------------------------------------------------  -->
+  <div class="row">
+  <div class="col-xs-12 col-md-6">
+  <input id="first_name" type="text" name="first_name"  title="First Name"  placeholder="First Name *" />
+  <span class="hint"><b>First Name:</b> Please use only characters from the latin alphabet.<span class="hint-pointer">&nbsp;</span></span>
+  
+  </div>
+  <div class="col-xs-12 col-md-6">
+ 
+  <input id="company" type="text" name="company" placeholder="Company *" />
+    <span class="hint"><b>Company:</b> Please use only characters from the latin alphabet.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  <div class="col-xs-12 col-md-6">
+   <input id="last_name" type="text" name="last_name"    placeholder="Last Name *" />
+     <span class="hint"><b>Last Name:</b> Please use only characters from the latin alphabet.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  <div class="col-xs-12 col-md-6">
+  
+  <input id="employees" type="text" name="employees" value=""  placeholder="Employees" />
+    <span class="hint"><b>Employees:</b> Please tell us how many employees work for your company.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  <div class="col-xs-12 col-md-6">
+  
+  <input id="title" type="text" name="title" placeholder="Job Title *" />
+  <span class="hint"><b>Job Title</b> Please use only characters from the latin alphabet.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+   <div class="col-xs-12 col-md-6">
+  
+  <select id="industry" name="industry">
+    <option value="none">Industry</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Agriculture">Agriculture</option>
+    <option value="Airlines/Aviation/Aerospace">Airlines/Aviation/Aerospace</option>
+    <option value="Apparel">Apparel</option>
+    <option value="Automotive">Automotive</option>
+    <option value="Banking/Financial Services">Banking/Financial Services</option>
+    <option value="Biotechnology">Biotechnology</option>
+    <option value="Chemicals">Chemicals</option>
+    <option value="Civic &amp; Social Organization">Civic &amp; Social Organization</option>
+    <option value="Communications">Communications</option>
+    <option value="Computer Software">Computer Software</option>
+    <option value="Construction">Construction</option>
+    <option value="Consulting">Consulting</option>
+    <option value="Consumer Electronics/IT/Computer">Consumer Electronics/IT/Computer</option>
+    <option value="Education Management/Universities/Non-Pr">Education Management/Universities/Non-Pr</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Engineering">Engineering</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Environmental">Environmental</option>
+    <option value="Facilities">Facilities</option>
+    <option value="FMCG/Retail">FMCG/Retail</option>
+    <option value="Government Administration/Government Age">Government Administration/Government Age</option>
+    <option value="Hospital &amp; Health Care">Hospital &amp; Health Care</option>
+    <option value="Hospitality /Leisure/ Travel &amp; Tourism">Hospitality /Leisure/ Travel &amp; Tourism</option>
+    <option value="Human Resources">Human Resources</option>
+    <option value="Insurance">Insurance</option>
+    <option value="Legal Services">Legal Services</option>
+    <option value="Logistics / Shipping  and Supply Chain">Logistics / Shipping and Supply Chain</option>
+    <option value="Machinery">Machinery</option>
+    <option value="Manufacturing">Manufacturing</option>
+    <option value="Market Research">Market Research</option>
+    <option value="Media/Bloggers/Advertising Agencies">Media/Bloggers/Advertising Agencies</option>
+    <option value="Mining &amp; Metals">Mining &amp; Metals</option>
+    <option value="Oil/Gas/ Energy/Renewables/Petrochem">Oil/Gas/ Energy/Renewables/Petrochem</option>
+    <option value="Other">Other</option>
+    <option value="Pharmaceuticals &amp; Medical Devices">Pharmaceuticals &amp; Medical Devices</option>
+    <option value="Real Estate">Real Estate</option>
+    <option value="Shipping">Shipping</option>
+    <option value="Staffing and Recruiting">Staffing and Recruiting</option>
+    <option value="Technology">Technology</option>
+    <option value="Telecommunications">Telecommunications</option>
+    <option value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad</option>
+    <option value="Utilities">Utilities</option>
+  </select>
+   
+   </div>
+    <div class="col-xs-12 col-md-6">
+ 
+  <input id="email" type="text" name="email" placeholder="Email address *"/>
+  <span class="hint"><b>Email Address</b> Please type a valid email address into this field.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  
+  
+  <div class="col-xs-12 col-md-6">
+ <select id="country" name="country">
+ <option value="">Country</option>
+	<option value="AF">Afghanistan</option>
+	<option value="AX">Åland Islands</option>
+	<option value="AL">Albania</option>
+	<option value="DZ">Algeria</option>
+	<option value="AS">American Samoa</option>
+	<option value="AD">Andorra</option>
+	<option value="AO">Angola</option>
+	<option value="AI">Anguilla</option>
+	<option value="AQ">Antarctica</option>
+	<option value="AG">Antigua and Barbuda</option>
+	<option value="AR">Argentina</option>
+	<option value="AM">Armenia</option>
+	<option value="AW">Aruba</option>
+	<option value="AU">Australia</option>
+	<option value="AT">Austria</option>
+	<option value="AZ">Azerbaijan</option>
+	<option value="BS">Bahamas</option>
+	<option value="BH">Bahrain</option>
+	<option value="BD">Bangladesh</option>
+	<option value="BB">Barbados</option>
+	<option value="BY">Belarus</option>
+	<option value="BE">Belgium</option>
+	<option value="BZ">Belize</option>
+	<option value="BJ">Benin</option>
+	<option value="BM">Bermuda</option>
+	<option value="BT">Bhutan</option>
+	<option value="BO">Bolivia, Plurinational State of</option>
+	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+	<option value="BA">Bosnia and Herzegovina</option>
+	<option value="BW">Botswana</option>
+	<option value="BV">Bouvet Island</option>
+	<option value="BR">Brazil</option>
+	<option value="IO">British Indian Ocean Territory</option>
+	<option value="BN">Brunei Darussalam</option>
+	<option value="BG">Bulgaria</option>
+	<option value="BF">Burkina Faso</option>
+	<option value="BI">Burundi</option>
+	<option value="KH">Cambodia</option>
+	<option value="CM">Cameroon</option>
+	<option value="CA">Canada</option>
+	<option value="CV">Cape Verde</option>
+	<option value="KY">Cayman Islands</option>
+	<option value="CF">Central African Republic</option>
+	<option value="TD">Chad</option>
+	<option value="CL">Chile</option>
+	<option value="CN">China</option>
+	<option value="CX">Christmas Island</option>
+	<option value="CC">Cocos (Keeling) Islands</option>
+	<option value="CO">Colombia</option>
+	<option value="KM">Comoros</option>
+	<option value="CG">Congo</option>
+	<option value="CD">Congo, the Democratic Republic of the</option>
+	<option value="CK">Cook Islands</option>
+	<option value="CR">Costa Rica</option>
+	<option value="CI">Côte d'Ivoire</option>
+	<option value="HR">Croatia</option>
+	<option value="CU">Cuba</option>
+	<option value="CW">Curaçao</option>
+	<option value="CY">Cyprus</option>
+	<option value="CZ">Czech Republic</option>
+	<option value="DK">Denmark</option>
+	<option value="DJ">Djibouti</option>
+	<option value="DM">Dominica</option>
+	<option value="DO">Dominican Republic</option>
+	<option value="EC">Ecuador</option>
+	<option value="EG">Egypt</option>
+	<option value="SV">El Salvador</option>
+	<option value="GQ">Equatorial Guinea</option>
+	<option value="ER">Eritrea</option>
+	<option value="EE">Estonia</option>
+	<option value="ET">Ethiopia</option>
+	<option value="FK">Falkland Islands (Malvinas)</option>
+	<option value="FO">Faroe Islands</option>
+	<option value="FJ">Fiji</option>
+	<option value="FI">Finland</option>
+	<option value="FR">France</option>
+	<option value="GF">French Guiana</option>
+	<option value="PF">French Polynesia</option>
+	<option value="TF">French Southern Territories</option>
+	<option value="GA">Gabon</option>
+	<option value="GM">Gambia</option>
+	<option value="GE">Georgia</option>
+	<option value="DE">Germany</option>
+	<option value="GH">Ghana</option>
+	<option value="GI">Gibraltar</option>
+	<option value="GR">Greece</option>
+	<option value="GL">Greenland</option>
+	<option value="GD">Grenada</option>
+	<option value="GP">Guadeloupe</option>
+	<option value="GU">Guam</option>
+	<option value="GT">Guatemala</option>
+	<option value="GG">Guernsey</option>
+	<option value="GN">Guinea</option>
+	<option value="GW">Guinea-Bissau</option>
+	<option value="GY">Guyana</option>
+	<option value="HT">Haiti</option>
+	<option value="HM">Heard Island and McDonald Islands</option>
+	<option value="VA">Holy See (Vatican City State)</option>
+	<option value="HN">Honduras</option>
+	<option value="HK">Hong Kong</option>
+	<option value="HU">Hungary</option>
+	<option value="IS">Iceland</option>
+	<option value="IN">India</option>
+	<option value="ID">Indonesia</option>
+	<option value="IR">Iran, Islamic Republic of</option>
+	<option value="IQ">Iraq</option>
+	<option value="IE">Ireland</option>
+	<option value="IM">Isle of Man</option>
+	<option value="IL">Israel</option>
+	<option value="IT">Italy</option>
+	<option value="JM">Jamaica</option>
+	<option value="JP">Japan</option>
+	<option value="JE">Jersey</option>
+	<option value="JO">Jordan</option>
+	<option value="KZ">Kazakhstan</option>
+	<option value="KE">Kenya</option>
+	<option value="KI">Kiribati</option>
+	<option value="KP">Korea, Democratic People's Republic of</option>
+	<option value="KR">Korea, Republic of</option>
+	<option value="KW">Kuwait</option>
+	<option value="KG">Kyrgyzstan</option>
+	<option value="LA">Lao People's Democratic Republic</option>
+	<option value="LV">Latvia</option>
+	<option value="LB">Lebanon</option>
+	<option value="LS">Lesotho</option>
+	<option value="LR">Liberia</option>
+	<option value="LY">Libya</option>
+	<option value="LI">Liechtenstein</option>
+	<option value="LT">Lithuania</option>
+	<option value="LU">Luxembourg</option>
+	<option value="MO">Macao</option>
+	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+	<option value="MG">Madagascar</option>
+	<option value="MW">Malawi</option>
+	<option value="MY">Malaysia</option>
+	<option value="MV">Maldives</option>
+	<option value="ML">Mali</option>
+	<option value="MT">Malta</option>
+	<option value="MH">Marshall Islands</option>
+	<option value="MQ">Martinique</option>
+	<option value="MR">Mauritania</option>
+	<option value="MU">Mauritius</option>
+	<option value="YT">Mayotte</option>
+	<option value="MX">Mexico</option>
+	<option value="FM">Micronesia, Federated States of</option>
+	<option value="MD">Moldova, Republic of</option>
+	<option value="MC">Monaco</option>
+	<option value="MN">Mongolia</option>
+	<option value="ME">Montenegro</option>
+	<option value="MS">Montserrat</option>
+	<option value="MA">Morocco</option>
+	<option value="MZ">Mozambique</option>
+	<option value="MM">Myanmar</option>
+	<option value="NA">Namibia</option>
+	<option value="NR">Nauru</option>
+	<option value="NP">Nepal</option>
+	<option value="NL">Netherlands</option>
+	<option value="NC">New Caledonia</option>
+	<option value="NZ">New Zealand</option>
+	<option value="NI">Nicaragua</option>
+	<option value="NE">Niger</option>
+	<option value="NG">Nigeria</option>
+	<option value="NU">Niue</option>
+	<option value="NF">Norfolk Island</option>
+	<option value="MP">Northern Mariana Islands</option>
+	<option value="NO">Norway</option>
+	<option value="OM">Oman</option>
+	<option value="PK">Pakistan</option>
+	<option value="PW">Palau</option>
+	<option value="PS">Palestinian Territory, Occupied</option>
+	<option value="PA">Panama</option>
+	<option value="PG">Papua New Guinea</option>
+	<option value="PY">Paraguay</option>
+	<option value="PE">Peru</option>
+	<option value="PH">Philippines</option>
+	<option value="PN">Pitcairn</option>
+	<option value="PL">Poland</option>
+	<option value="PT">Portugal</option>
+	<option value="PR">Puerto Rico</option>
+	<option value="QA">Qatar</option>
+	<option value="RE">Réunion</option>
+	<option value="RO">Romania</option>
+	<option value="RU">Russian Federation</option>
+	<option value="RW">Rwanda</option>
+	<option value="BL">Saint Barthélemy</option>
+	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+	<option value="KN">Saint Kitts and Nevis</option>
+	<option value="LC">Saint Lucia</option>
+	<option value="MF">Saint Martin (French part)</option>
+	<option value="PM">Saint Pierre and Miquelon</option>
+	<option value="VC">Saint Vincent and the Grenadines</option>
+	<option value="WS">Samoa</option>
+	<option value="SM">San Marino</option>
+	<option value="ST">Sao Tome and Principe</option>
+	<option value="SA">Saudi Arabia</option>
+	<option value="SN">Senegal</option>
+	<option value="RS">Serbia</option>
+	<option value="SC">Seychelles</option>
+	<option value="SL">Sierra Leone</option>
+	<option value="SG">Singapore</option>
+	<option value="SX">Sint Maarten (Dutch part)</option>
+	<option value="SK">Slovakia</option>
+	<option value="SI">Slovenia</option>
+	<option value="SB">Solomon Islands</option>
+	<option value="SO">Somalia</option>
+	<option value="ZA">South Africa</option>
+	<option value="GS">South Georgia and the South Sandwich Islands</option>
+	<option value="SS">South Sudan</option>
+	<option value="ES">Spain</option>
+	<option value="LK">Sri Lanka</option>
+	<option value="SD">Sudan</option>
+	<option value="SR">Suriname</option>
+	<option value="SJ">Svalbard and Jan Mayen</option>
+	<option value="SZ">Swaziland</option>
+	<option value="SE">Sweden</option>
+	<option value="CH">Switzerland</option>
+	<option value="SY">Syrian Arab Republic</option>
+	<option value="TW">Taiwan, Province of China</option>
+	<option value="TJ">Tajikistan</option>
+	<option value="TZ">Tanzania, United Republic of</option>
+	<option value="TH">Thailand</option>
+	<option value="TL">Timor-Leste</option>
+	<option value="TG">Togo</option>
+	<option value="TK">Tokelau</option>
+	<option value="TO">Tonga</option>
+	<option value="TT">Trinidad and Tobago</option>
+	<option value="TN">Tunisia</option>
+	<option value="TR">Turkey</option>
+	<option value="TM">Turkmenistan</option>
+	<option value="TC">Turks and Caicos Islands</option>
+	<option value="TV">Tuvalu</option>
+	<option value="UG">Uganda</option>
+	<option value="UA">Ukraine</option>
+	<option value="AE">United Arab Emirates</option>
+	<option value="GB">United Kingdom</option>
+	<option value="US">United States</option>
+	<option value="UM">United States Minor Outlying Islands</option>
+	<option value="UY">Uruguay</option>
+	<option value="UZ">Uzbekistan</option>
+	<option value="VU">Vanuatu</option>
+	<option value="VE">Venezuela, Bolivarian Republic of</option>
+	<option value="VN">Viet Nam</option>
+	<option value="VG">Virgin Islands, British</option>
+	<option value="VI">Virgin Islands, U.S.</option>
+	<option value="WF">Wallis and Futuna</option>
+	<option value="EH">Western Sahara</option>
+	<option value="YE">Yemen</option>
+	<option value="ZM">Zambia</option>
+	<option value="ZW">Zimbabwe</option>
+</select>
+ 
+  </div>
+  <div class="col-xs-12 col-md-6">
+ 
+  <input id="phone" type="text" name="phone" placeholder="Phone *" />
+  <span class="hint"><b>Phone Number</b> Please provide your phone number using only digits.<span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  <div class="col-xs-12 col-md-6">
+ 
+  <input id="URL" type="text" name="URL" placeholder="Website"  />
+  <span class="hint"><b>Website</b> Please tell us the URL of your website. <span class="hint-pointer">&nbsp;</span></span>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-12">
+  <textarea name="description" placeholder="Description" style="height:200px;"></textarea>
+  </div>
+  </div>
+  <div class="row">
+  <div class=" col-md-4" style="float:right;">
+  <input type="submit" name="submit" value="SUBMIT" style="background:#8c8c8c; color:#FFF; font-weight:bold;" />
+  </div>
+  </div>
+</form>
+    </div> 
+<!--END CONTACT FORM -->   
+   <div class="wp30"></div>
+  
+ <!-- Register your place Section -->
+<div class="full-width" style="background:url(img/mainpage/iRecruit_2014_getyourticket-bg.jpg) fixed top no-repeat; background-size:cover;">
+  <div class="row container container-centered">
+    <div class="wp45"></div>
+    <h2 class="centered-text" style="color:#FFF;" >Register Your Place!</h2>
+    <div class="wp15"></div>
+    <p class="centered-text" style="color:#FFF; max-width:700px; margin:0 auto;">Your ticket opens a door for you to a world of events, an exhibition, parties hosted by the world’s leading brands, investors, start-ups, media and more, a place<br>
+ where you can share in the optimism, innovation, disruption<br>
+ and dynamic energy that is currently<br>
+ inspiring our community! </p>
+    <div class="wp30"></div>
+    <div class="container-centered centered-text" style="border-bottom:1px solid #414547; max-width:360px; padding:20px;"><a href="register.html"><img alt="getyourticket" class="img-responsive wobble-vertical" src="img/mainpage/get_your_ticket.png"></a></div>
+    <div class="wp30"></div>
+    <div class="container-centered centered-text">
+      <table id="sitemap-table" class="responsive centered-text" style="color:#FFF; margin:0 auto;" >
+        <tr>
+          <td><a class="float" href="venue.html">VENUE</a></td>
+          <td>|</td>
+          <td><a class="float" target="_blank" href="http://bit.ly/OruJnA">MAP/LOCATION</a></td>
+          <td>|</td>
+          <td><a class="float" href="floorplan.html">FLOORPLANS</a></td>
+          <td>|</td>
+          <td><a class="float" href="downloadpdf.html">BROCHURE</a></td>
+          <td>|</td>
+          <td><a class="float" target="_blank" href="http://www.amsterdam.info/">AMSTERDAM</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="wp55"></div>
+  </div>
+</div>
+
+<!-- END Register your place Section --> 
+
+<!-- Black Background Section -->
+<div id="footer-container" style="height:100%;"> 
+  <!-- Navigation Black Background Section It is not displayed in mobile view -->
+  <div class="row center-block wide-container col-md-12" >
+    <div class="wp75"></div>
+    
+    <!-- END Navigation Black Background Section --> 
+    
+    <!-- Register-Newsletter-Social in Black Background Section -->
+    <div class="container row container-centered" >
+      <div class="col-md-2 footer-inside-container centered-container" style="padding-top:18px;"> <span class="footer-table-text">Follow us!</span><br>
+        <table class="blacksection-social" >
+          <tr>
+            <td class="social-table-item"><a href="http://linkd.in/1kCrNz6" target="_blank">
+              <div class="footer-item footer-icon ln-footer float" ></div>
+              </a></td>
+            <td class="social-table-item"><a href="https://twitter.com/irecruitexpo" target="_blank">
+              <div class="footer-item footer-icon twitter-footer float" ></div>
+              </a></td>
+            <td class="social-table-item"><a href="https://www.facebook.com/irecruitconference" target="_blank">
+              <div class="footer-item footer-icon fb-footer float" ></div>
+              </a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-4 footer-inside-container" style="padding-top:18px;">
+        <div class="input-group"> <span class="left-aligned" >Sign up for our Newsletter!</span><br>
+          <form id="myForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
+            <input type="hidden" name="oid" value="00DD0000000nwgk" />
+            <input type="hidden" name="retURL" value="http://irecruitexpo.com/thankyou.html" />
+            <input  placeholder="Enter your email address!" type="email" class="form-control footer-item" />
+           <span class="input-group-btn">
+           <button style="top:-51px; left:188px; padding:0 !important;" class="btn btn-default footer-item centered-text" type="submit">OK</button>
+            </span> </form></div>
+      </div>
+      <div class="col-md-3 footer-inside-container" style="top:26px;"><a href="downloadpdf.html"  class="btn btn-lg btn-primary footer-item fullwidth float">DOWNLOAD BROCHURE</a></div>
+      <div class="col-md-3 footer-inside-container" style="top:26px;"><a href="register.html"  class="btn btn-lg btn-secondary footer-item fullwidth float">REGISTER NOW!</a></div>
+    </div>
+    <div class="wp30"></div>
+    <div class="container">
+      <div class="col-md-2"><img alt="iRecruit-Logo" src="img/irecruit-logo-footer.png"></div>
+      <div class="col-md-4"><span class="footertext" style="font-size:13px;">Copyright © 2014 HRN Europe. All Rights Reserved.</span></div>
+      <div class="col-md-2"></div>
+      <div class="col-md-4 container-right"><span class="footertext" ><a class="footerlink" href="terms.html" style="padding-right:10px;">Terms and Conditions</a> <a class="footerlink" href="contact.html">Get In Touch!</a></span><a href="mailto:info@irecruitexpo.com"><img class="float footer-mailicon" style="float:right;" alt="email" src="img/email.jpg"></a></div>
+    </div>
+    <div class="wp75"></div>
+  </div>
+</div>
+
+
+<a href="#" class="go-top"><i class="icon icon-chevron-up"></i></a> 
+<!-- Register-Newsletter-Social in Black Background Section --> 
+<!-- END Black Background Section -->  
+<!--Floating Ad section -->
+<div id="floating-ad" class="full-width " >
+<div class="container container-centered row" style="padding-top:10px;">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style row" style="margin: 0 auto; text-align:center; max-width:200px;">
+<!-- AddThis Button BEGIN -->
+<div class="col-xs-2"><a class="addthis_button_preferred_1"></a></div>
+<div class="col-xs-2"><a class="addthis_button_preferred_2"></a></div>
+<div class="col-xs-2"><a class="addthis_button_preferred_3"></a></div>
+<div class="col-xs-2"><a class="addthis_button_preferred_4"></a></div>
+<div class="col-xs-2"><a class="addthis_button_compact"></a></div>
+<div class="col-xs-2"><a class="addthis_counter addthis_bubble_style"></a></div>
+<!-- AddThis Button END -->
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5375d6405173da26"></script>
+<!-- AddThis Button END -->
+</div>
+</div>
+<!--END Floating Ad section -->
+
+<!-- jQuery Libs --> 
+<script src="vendor/jquery.js"></script> 
+<script src="js/plugins.js"></script> 
+<script src="vendor/jquery.easing.js"></script> 
+<script src="vendor/jquery.appear.js"></script> 
+<script src="vendor/jquery.cookie.js"></script> 
+<script src="vendor/bootstrap.js"></script> 
+<script src="vendor/masonry.js"></script> 
+<script src="vendor/twitterjs/twitter.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="vendor/owl-carousel/owl.carousel.js"></script> 
+<script src="vendor/magnific-popup/magnific-popup.js"></script> 
+<script src="vendor/jquery.knob.js"></script> 
+<script src="vendor/jquery.stellar.js"></script> 
+<script src="vendor/jquery.validate.js"></script> 
+<script src="vendor/isotope/jquery.isotope.js"></script> 
+
+<!-- Current Page JScripts --> 
+<script src="js/views/view.home.js"></script> 
+
+<!-- Theme Initializer --> 
+<script src="js/theme.js"></script> 
+
+<!-- Custom JS --> 
+<script src="js/custom.js"></script> 
+
+<!-- Scroll to top JS --> 
+<script src="js/gotopscroll.js"></script> 
+
+ 
+ 
+</html>
